@@ -28,12 +28,12 @@ public class LRHighlight
         {
             Color? backgroundColor = null;
 
-            // "Left"を含むオブジェクトの背景色を青に設定
+            // "Left"を含むオブジェクトの背景色を青に設定1
             if (Regex.IsMatch(obj.name, "(_L|\\.L)($|_[0-9]*|\\.[0-9]*|[0-9]+|\\()") || obj.name.Contains("Left"))
             {
                 backgroundColor = new Color(0.0f, 0.0f, 1.0f, 0.1f); // 青色に変更
             }
-            // "Right"を含むオブジェクトの背景色を赤に設定
+            // "Right"を含むオブジェクトの背景色を赤に設定1
             else if (Regex.IsMatch(obj.name, "(_R|\\.R)($|_[0-9]*|\\.[0-9]*|[0-9]+|\\()") || obj.name.Contains("Right"))
             {
                 backgroundColor = new Color(1.0f, 0.0f, 0.0f, 0.1f); // 赤色に変更
